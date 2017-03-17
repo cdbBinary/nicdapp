@@ -38,4 +38,5 @@ $ rails server
 ```
 
 For more information, see the
+
 [*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
