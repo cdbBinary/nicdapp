@@ -20,5 +20,5 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# Ignore Spring files.
+# Ignore Spring files. Kill system processes if tests become sluggish
 /spring/*.pid
