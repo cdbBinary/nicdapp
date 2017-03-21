@@ -1,4 +1,4 @@
 class CharliebrownbinaryController < ApplicationController
-  def index
+  def welcome
   end
 end
