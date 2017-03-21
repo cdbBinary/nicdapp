@@ -1,0 +1,2 @@
+module CharliebrownbinaryHelper
+end
