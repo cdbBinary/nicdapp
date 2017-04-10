@@ -64,8 +64,8 @@ p {
 	padding-top: 9px;
 	font-weight: bold;
 	&:hover {
-	color: #fff;
-	text-decoration: none;
+		color: #fff;
+		text-decoration: none;
 	}
 }
 
@@ -80,7 +80,7 @@ footer {
 		color: $gray;
 		&:hover {
 				color: $gray-darker;
-			}
+		}
 	}
 	small {
 		float: left;
@@ -94,6 +94,3 @@ footer {
 		}
 	}
 }
-
-
-
