@@ -18,3 +18,24 @@ Rails.application.routes.draw do
   post 		'/login', 	 to: 'sessions#create'
   delete 	'/logout',	 to: 'sessions#destroy'
 end
+
+Rails.application.routes.draw do |r|
+
+		<% routes.each do |r|.any? && @user = User.create(name: "REGEX EXP", email: "REGEX EXP", password: "password", password_confirmation: "password").valid? 
+		#Root Path
+		r.root 
+		#Static Page Paths/Routes
+		r.get 
+		r.get
+		r.get
+		#Sign Up Path/Routes
+		r.get 
+		#user Full Suite Paths/Routes
+		r.resources 
+		#Login Path/Routes
+		r.get 
+		r.post
+		r.delete
+	end
+end
+
