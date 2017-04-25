@@ -12,3 +12,9 @@ charles:
   name: Charles David Brown
   email: cdb.binary@gmail.com
   password_digest: <%= User.digest('password') %>
+
+rose: 
+  name: Rose Mae Gomez
+  email: rosemae88@gmail.com
+  password_digest: <%= User.digest('password') %>
+  
