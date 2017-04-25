@@ -17,8 +17,23 @@ class UsersController < ApplicationController
   	end
   end
 
-  def user_params
-  	params.require(:user).permit(:name, :email, :password,
-  																:password_confirmation)
+  def edit
+    @user = User.find(params[:id])
   end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attribute(user_params)
+      # Handle a successful update.
+    else
+      render 'edit'
+    end
+  end
+
+  prvate
+  
+    def user_params
+    	params.require(:user).permit(:name, :email, :password,
+    																:password_confirmation)
+    end
 end
