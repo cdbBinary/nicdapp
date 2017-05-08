@@ -15,7 +15,7 @@ charles:
   admin: true
 
 rose: 
-  name: Rose Mae Gomez
-  email: rosemae88@gmail.com
+  name: Gloria Brown
+  email: gbsays@gmail.com
   password_digest: <%= User.digest('password') %>
   
