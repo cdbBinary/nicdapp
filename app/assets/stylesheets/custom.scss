@@ -2,6 +2,7 @@
 @import "bootstrap";
 
 /* mixins, variables, etc. */
+
 $gray-medium-light: #eaeaea;
 $light-gray: #777;
 
@@ -12,6 +13,7 @@ $light-gray: #777;
 }
 
 /* miscellaneous */
+
 .debug_dump {
 	clear: both;
 	float: left;
@@ -21,6 +23,7 @@ $light-gray: #777;
 }
 
 /* universal */
+
 body {
 	padding-top: 60px;
 }
@@ -41,6 +44,7 @@ textarea {
 }
 
 /* typography */
+
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 }
@@ -67,6 +71,7 @@ p {
 }
 
 /* header */
+
 #logo {
 	float: left;
 	margin-right: 10px;
@@ -120,6 +125,7 @@ aside {
 }
 
 /* footer */
+
 footer {
 	margin-top: 45px;
 	padding-top: 5px;
@@ -145,6 +151,7 @@ footer {
 }
 
 /* forms */
+
 input, textarea, select, .uneditable-input {
 	border: 1px solid #bbb;
 	width: 100%;
@@ -172,6 +179,7 @@ input {
 }
 
 /* Users index */
+
 .users {
   list-style: none;
   margin: 0;
