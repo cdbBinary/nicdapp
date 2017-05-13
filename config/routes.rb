@@ -2,9 +2,9 @@
 Rails.application.routes.draw do
   # ROOT PATH/Landing Page
   root 'landingpage#start'
-  # root 'static_pages#home'
   
   # Static Page Paths
+  get  '/home',    to: 'static_pages#home'
   get  '/about',   to: 'static_pages#about'
   get  '/mywork',  to: 'static_pages#mywork'
   get  '/contact', to: 'static_pages#contact'
