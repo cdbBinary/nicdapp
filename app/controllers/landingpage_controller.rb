@@ -1,5 +1,4 @@
 class LandingpageController < ApplicationController
-
-  def start
+	def start
   end
 end

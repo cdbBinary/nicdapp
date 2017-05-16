@@ -3,13 +3,13 @@
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
-$light-gray: #777;
+$gray-medium-light:#eaeaea;
+$light-gray:#777;
 
 @mixin box_sizing {
-	-moz-box-sizing: 		border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing:					border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
 /* miscellaneous */
@@ -22,10 +22,13 @@ $light-gray: #777;
 	@include box_sizing;
 }
 
+// .bgimg img {
+// 	background-size: 900px 900px;
+// }
 /* universal */
 
 body {
-	padding-top: 60px;
+	padding-top: 30px;
 }
 
 section {
@@ -39,7 +42,7 @@ textarea {
 .center {
 	text-align: center;
 	h1 {
-		margin-bottom: 10px;
+		margin-bottom: auto;
 	}
 }
 
@@ -53,7 +56,7 @@ h1 {
 	font-size: 3em;
 	letter-spacing: -2px;
 	margin-bottom: 30px;
-	text-align: centter;
+	text-align: center;
 }
 
 h2 {
