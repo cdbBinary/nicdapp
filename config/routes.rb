@@ -12,11 +12,14 @@ Rails.application.routes.draw do
   # Sign Up Path
   get	 '/signup',  to: 'users#new'
 
-  # Users Full Suite Paths/Routes
-  resources 			 :users
-
   # Login Path/Routes
   get    '/login', to: 'sessions#new'
   post   '/login', to: 'sessions#create'
   delete '/logout',to: 'sessions#destroy'
+
+  # Users Full Suite Paths/Routes
+  resources        :users
+
+  # Accoutn Acitvation Route/Path
+  resources :account_activations, only: [:edit]
 end
