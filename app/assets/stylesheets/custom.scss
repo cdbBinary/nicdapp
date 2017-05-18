@@ -94,7 +94,10 @@ p {
 
 .container {
   font-family: Times;
-
+  width: auto;
+  height: auto;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .jumbotron {
@@ -219,7 +222,7 @@ input {
   margin-left: 0;
 }
 
-html body .bgimg {
+.bgimg {
   background: url('AdobeStock_102551199.jpeg') no-repeat center center;
   background-size: cover;
   height: 860px;
