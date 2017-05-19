@@ -79,14 +79,14 @@ p {
 	float: left;
 	margin-right: 10px;
 	font-size: 1.7em;
-	color: #777;
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: -1px;
 	padding-top: 9px;
 	font-weight: bold;
-  font-family: Times;
+  font-family: Times, "Times New Roman", serif;
 	&:hover {
-		color: #fff;
+		color: $light-gray;
 		text-decoration: none;
 	}
 }
@@ -131,21 +131,28 @@ aside {
 /* footer */
 
 footer {
-	margin-top: 45px;
-	padding-top: 5px;
-	border-top: 1px solid #eaeaea;
-	color: $light-gray;
+  margin-top: 45px;
+  padding-top: 5px;
+  color: white;
 	a {
-		color: $gray;
+		color: white;
 		&:hover {
-				color: $gray-darker;
+				color: $light-gray;
+        text-decoration: none;
 		}
 	}
 	small {
 		float: left;
+    position: absolute;
+    bottom: 25px;
 	}
 	ul {
+    font-size: 15px;
+    position: fixed;
+    bottom: 11px;
+    right: 0;
 		float: right;
+    margin-right: 10px;
 		list-style: none;
 		li {
 			float: left;
@@ -213,7 +220,7 @@ input {
 .bgimg {
   background: url('AdobeStock_102551199.jpeg') no-repeat center center;
   background-size: cover;
-  height: 1100px;
+  height: 1050px;
   background-color: black;
   margin-left: -10px;
   margin-right: -10px;
@@ -222,7 +229,7 @@ input {
   h1 {
     padding-top: 550px;
     color: white;
-    font-family: Times, Times, serif;
+    font-family: Times, "Times New Roman", serif;
     font-size: 90px;
   }
   h3 {
