@@ -13,9 +13,26 @@ charles:
   email: cdb.binary@gmail.com
   password_digest: <%= User.digest('password') %>
   admin: true
+  activated: true
+  activated_at: Time.zone.now
 
-rose: 
+gloria:
   name: Gloria Brown
   email: gbsays@gmail.com
   password_digest: <%= User.digest('password') %>
-  
+  activated: true
+  activated_at: Time.zone.now
+
+Sterling:
+  name: Sterling Archer
+  email: sarcher@gmail.com
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: Time.zone.now
+
+Lana:
+  name: Lana Kane
+  email: lkane@gmail.com
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: Time.zone.now
