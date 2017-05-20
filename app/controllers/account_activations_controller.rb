@@ -4,5 +4,8 @@ class AccountActivationsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticated?(:activation, params[:id])
     # activate the user
+    else
+    # handle invalid activation link
+    end
   end
 end
