@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # ROOT PATH/Landing Page
   # root 'landingpage#start'
   root 'static_pages#home'
-  
+
   # Static Page Paths
   get  '/mywork',  to: 'static_pages#mywork'
   get  '/about',   to: 'static_pages#about'
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   # Users Full Suite Paths/Routes
   resources 			 :users
-
+  resources        :account_activations, only: [:edit]
   # Login Path/Routes
   get    '/login', to: 'sessions#new'
   post   '/login', to: 'sessions#create'
