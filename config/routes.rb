@@ -2,7 +2,7 @@
 Rails.application.routes.draw do
   # ROOT PATH
   root 'static_pages#home'
-  
+
   # Static Page Paths
   get  '/mywork',    to: 'static_pages#mywork'
   get  '/about',   to: 'static_pages#about'
