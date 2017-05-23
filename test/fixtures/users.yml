@@ -13,47 +13,35 @@ charles:
   email: cdb.binary@gmail.com
   password_digest: <%= User.digest('password') %>
   admin: true
-  activated: true
-  activated_at: Time.zone.now
+  # activated: true
+  # activated_at: Time.zone.now
 
-gloria:
-<<<<<<< HEAD
-  name: Gloria Brown
-  email: gbsays@gmail.com
-  password_digest: <%= User.digest('password') %>
-  activated: true
-  activated_at: Time.zone.now
-
-Sterling:
+archer:
   name: Sterling Archer
-  email: sarcher@gmail.com
+  email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
-  activated: true
-  activated_at: Time.zone.now
+  # activated: true
+  # activated_at: Time.zone.now
 
-Lana:
+lana:
   name: Lana Kane
-  email: lkane@gmail.com
+  email: hands@example.gov
   password_digest: <%= User.digest('password') %>
-  activated: true
-  activated_at: Time.zone.now
+  # activated: true
+  # activated_at: Time.zone.now
+
+malory:
+  name: Malory Archer
+  email: boss@example.gov
+  password_digest: <%= User.digest('password') %>
+  # activated: true
+  # activated_at: Time.zone.now
 
 <% 30.times do |n| %>
 user_<%= n %>:
   name: <%= "User-c#{n}" %>
   email: <%= "User-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
-  activated_at: <%= Time.zone.now %>
-
-
-
-
-
-
-
-=======
-  name: Gloria
-  email: gbsays@gmail.com
-  password_digest: <%= User.digest('password') %>
->>>>>>> advanced-login
+  # activated: true
+  # activated_at: Time.zone.now
 

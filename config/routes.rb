@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 
   # Users Full Suite Paths/Routes
   resources 			 :users
-  resources        :account_activations, only: [:edit]
 
   # Login Path/Routes
   get    '/login', to: 'sessions#new'
