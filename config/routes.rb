@@ -6,7 +6,10 @@ Rails.application.routes.draw do
 =======
   # ROOT PATH
   root 'static_pages#home'
+<<<<<<< HEAD
 >>>>>>> basic-login
+=======
+>>>>>>> advanced-login
 
   # Static Page Paths
   get  '/home',    to: 'static_pages#home'
@@ -17,10 +20,17 @@ Rails.application.routes.draw do
   # Sign Up Path
   get	 '/signup',  to: 'users#new'
 
+<<<<<<< HEAD
+=======
+  # Users Full Suite Paths/Routes
+  resources 			 :users
+  resources        :account_activations, only: [:edit]
+>>>>>>> advanced-login
   # Login Path/Routes
   get    '/login', to: 'sessions#new'
   post   '/login', to: 'sessions#create'
   delete '/logout',to: 'sessions#destroy'
+<<<<<<< HEAD
 
   # Users Full Suite Paths/Routes
   resources        :users
@@ -34,4 +44,6 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
 >>>>>>> basic-login
+=======
+>>>>>>> advanced-login
 end
