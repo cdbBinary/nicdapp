@@ -1,4 +1,3 @@
-
 Rails.application.routes.draw do
   # ROOT PATH
   root 'static_pages#home'
