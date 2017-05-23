@@ -28,7 +28,7 @@ $light-gray:#777;
 /* universal */
 
 body {
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 section {
@@ -42,7 +42,7 @@ textarea {
 .center {
 	text-align: center;
 	h1 {
-		margin-bottom: auto;
+		margin-bottom: 10px;
 	}
 }
 
@@ -84,7 +84,6 @@ p {
 	letter-spacing: -1px;
 	padding-top: 9px;
 	font-weight: bold;
-  font-family: Times, "Times New Roman", serif;
 	&:hover {
 		color: $light-gray;
 		text-decoration: none;
@@ -133,19 +132,21 @@ aside {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  color: white;
+  border-top: 1px solid #eaeaea;
+  color: #light-gray;
 	a {
-		color: white;
+		color: #555;
 		&:hover {
-				color: $light-gray;
-        text-decoration: none;
-		}
-	}
+			color: #222;
+      text-decoration: none;
+	  }
+  }
 	small {
 		float: left;
     position: absolute;
     bottom: 25px;
 	}
+
 	ul {
     font-size: 15px;
     position: fixed;
@@ -239,14 +240,14 @@ input {
   }
 }
 
-.container {
-  font-family: Times;
-  width: auto;
-  height: auto;
-  margin-left: -5px;
-  margin-right: -5px;
-}
+// .container {
+//   font-family: Times;
+//   width: auto;
+//   height: auto;
+//   margin-left: -5px;
+//   margin-right: -5px;
+// }
 
-.jumbotron {
-  width: 100%;
-}
+// .jumbotron {
+//   width: 50%;
+// }
