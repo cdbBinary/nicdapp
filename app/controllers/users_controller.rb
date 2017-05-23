@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user,  only: [:index, :edit, :update, :destroy]
-  before_action :correct_user,  only: [:edit, :update]
-  before_action :admin_user,  only: [:destroy]
+  before_action :correct_user,    only: [:edit, :update]
+  before_action :admin_user,      only:  :destroy
 
   def index
     @users = User.paginate(page: params[:page])
@@ -24,7 +24,11 @@ class UsersController < ApplicationController
       redirect_to root_url
 =======
       log_in @user
+<<<<<<< HEAD
   		flash[:success] = "Welcome you Nailed It!"
+=======
+  		flash[:success] = "Profiled Updated, Nailed It!"
+>>>>>>> advanced-login
   		redirect_to @user
 >>>>>>> basic-login
   	else
