@@ -2,11 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.0'
 
-<<<<<<< HEAD
-gem 'rails'
-=======
 gem 'rails', '~> 5.1', '>= 5.1.1'
->>>>>>> basic-login
 gem 'bcrypt'
 gem 'faker'
 gem 'carrierwave'
@@ -22,11 +18,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-<<<<<<< HEAD
 gem 'high_voltage'
-
-=======
->>>>>>> basic-login
 
 group :development, :test do
   gem 'sqlite3'
