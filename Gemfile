@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.0'
 
+<<<<<<< HEAD
 gem 'rails', '~> 5.1', '>= 5.1.1'
 gem 'bcrypt'
 gem 'faker'
