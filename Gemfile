@@ -18,7 +18,6 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'high_voltage'
 
 group :development, :test do
   gem 'pg',                    '~> 0.20.0'
