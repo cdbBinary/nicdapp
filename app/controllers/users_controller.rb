@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user,  only: [:index, :edit, :update, :destroy]
-  before_action :correct_user,  only: [:edit, :update]
-  before_action :admin_user,  only: [:destroy]
+  before_action :correct_user,    only: [:edit, :update]
+  before_action :admin_user,      only:  :destroy
 
   def index
     @users = User.paginate(page: params[:page])
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params) # Not the final implementation!
   	if @user.save
       log_in @user
-  		flash[:success] = "Nailed It!"
+  		flash[:success] = "Profiled Updated, Nailed It!"
   		redirect_to @user
   	else
   		render 'new'
