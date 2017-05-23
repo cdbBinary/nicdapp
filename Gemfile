@@ -20,7 +20,6 @@ gem 'turbolinks'
 gem 'jbuilder'
 
 group :development, :test do
-  gem 'pg',                    '~> 0.20.0'
   gem 'byebug',  '9.0.0', platform: :mri
 end
 
@@ -38,8 +37,8 @@ group :test do
   gem 'guard-minitest'
 end
 
-group :production do
-  gem 'pg',                       '~> 0.20.0'
+group :develop, :production do
+  gem 'pg',                    '~> 0.20.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
