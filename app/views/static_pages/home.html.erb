@@ -1,6 +1,13 @@
-<div class="center container">
-	<h1>Nailed It Custom Designs</h1>
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Nailed It%></title>
+  </head>
+    <div class="center container">
+    	<h1>Nailed It Custom Designs</h1>
 
-	<h4>'from rough to finish' <i>--Adam Lee Gottfried</i></h4>
-	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+    	<h4>'from rough to finish' <i>--Adam Lee Gottfried</i></h4>
+    	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
+    </div>
+</html>

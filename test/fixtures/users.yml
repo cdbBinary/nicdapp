@@ -9,15 +9,14 @@
 #   email: MyString
 
 charles:
-  name: Charles
+  name: Charlie Brown
   email: cdb.binary@gmail.com
   password_digest: <%= User.digest('password') %>
   admin: true
   activated: true
   activated_at: Time.zone.now
 
-gloria:
-<<<<<<< HEAD
+Gloria:
   name: Gloria Brown
   email: gbsays@gmail.com
   password_digest: <%= User.digest('password') %>
@@ -44,16 +43,3 @@ user_<%= n %>:
   email: <%= "User-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
   activated_at: <%= Time.zone.now %>
-
-
-
-
-
-
-
-=======
-  name: Gloria
-  email: gbsays@gmail.com
-  password_digest: <%= User.digest('password') %>
->>>>>>> advanced-login
-
